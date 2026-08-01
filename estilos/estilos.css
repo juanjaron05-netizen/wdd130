@@ -15,6 +15,7 @@ body {
 
 nav {
     background-color: steelblue;
+    padding: 10px;
 }
 
 nav a {
@@ -57,6 +58,6 @@ aside img {
 
 footer {
     margin-top: 1em;
-    border: 1px solid #000;
+    border-top: 1px solid #000;
     text-align: center;
 }
