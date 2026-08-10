@@ -1,6 +1,5 @@
 :root {
     --cor-primaria: #075985;
-    --cor-secundaria: #0e7490;
     --cor-destaque1: #164e63;
     --cor-destaque2: #f0f9ff;
     --cor-branca: #ffffff;
@@ -32,7 +31,6 @@ header {
     display: grid;
     grid-template-columns: 150px 1fr;
     align-items: center;
-
     background-color: var(--cor-primaria);
     padding: 15px;
 }
@@ -79,8 +77,6 @@ article {
     padding: 16px;
 }
 
-/* HERO */
-
 .hero {
     position: relative;
     margin-top: 20px;
@@ -96,40 +92,29 @@ article {
     position: absolute;
     top: 20px;
     width: 100%;
-
     padding: 16px;
-
     text-align: center;
-
     background-color: var(--cor-destaque1);
     color: var(--cor-branca);
-
     opacity: 0.85;
 }
 
 .hero article {
     position: absolute;
-
     left: 20px;
     right: 20px;
     bottom: 20px;
-
     padding: 20px;
-
     background-color: rgba(7, 89, 133, 0.9);
     color: var(--cor-branca);
-
     overflow: auto;
 }
 
 .hero article img {
     float: right;
-
     width: 125px;
     height: 125px;
-
     object-fit: cover;
-
     margin-left: 20px;
     border: 3px solid var(--cor-branca);
     border-radius: 8px;
@@ -138,8 +123,6 @@ article {
 .hero article p {
     color: var(--cor-branca);
 }
-
-/* SEÇÕES */
 
 section {
     background-color: var(--cor-branca);
@@ -151,16 +134,12 @@ section {
     min-height: 120px;
 }
 
-/* FOOTER */
-
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     background-color: var(--cor-primaria);
     color: var(--cor-branca);
-
     padding: 20px;
 }
 
@@ -172,7 +151,6 @@ footer p {
     display: flex;
     align-items: center;
     gap: 12px;
-
     margin: 0;
     padding: 0;
 }
