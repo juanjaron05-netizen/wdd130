@@ -1,22 +1,13 @@
-/* ================================
-   VARIÁVEIS DO SITE
-================================ */
-
 :root {
-    --cor-primaria: #087ea4;
-    --cor-secundaria: #dff3f7;
-    --cor-escura: #023047;
-    --cor-destaque: #ffb703;
+    --cor-primaria: #075985;
+    --cor-secundaria: #0e7490;
+    --cor-destaque1: #164e63;
+    --cor-destaque2: #f0f9ff;
     --cor-branca: #ffffff;
-    --cor-fundo: #f4f8f9;
 
     --fonte-titulo: Georgia, "Times New Roman", serif;
     --fonte-body: Arial, Helvetica, sans-serif;
 }
-
-/* ================================
-   RESET
-================================ */
 
 * {
     margin: 0;
@@ -24,20 +15,11 @@
     box-sizing: border-box;
 }
 
-/* ================================
-   BODY
-================================ */
-
 body {
     font-family: var(--fonte-body);
-    color: var(--cor-escura);
-    background-color: var(--cor-fundo);
-    line-height: 1.5;
+    color: var(--cor-destaque1);
+    background-color: var(--cor-destaque2);
 }
-
-/* ================================
-   LARGURA PRINCIPAL
-================================ */
 
 header,
 main,
@@ -46,166 +28,84 @@ footer {
     margin: 0 auto;
 }
 
-/* ================================
-   HEADER
-================================ */
-
 header {
-    min-height: 105px;
-
-    display: flex;
+    display: grid;
+    grid-template-columns: 150px 1fr;
     align-items: center;
-    justify-content: space-between;
 
-    padding: 10px 25px;
-
-    background-color: var(--cor-branca);
-
-    border-bottom: 3px solid var(--cor-primaria);
-
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    background-color: var(--cor-primaria);
+    padding: 15px;
 }
-
-/* LOGO */
 
 .logo {
-    width: 105px;
+    width: 100px;
     height: auto;
-
-    display: block;
-
-    transition: transform 0.3s ease;
 }
 
-.logo:hover {
-    transform: scale(1.05);
-}
-
-/* ================================
-   NAVEGAÇÃO
-================================ */
-
-header nav {
+nav {
     display: flex;
-    align-items: center;
-
-    margin: 0;
-    padding: 0;
+    justify-content: flex-end;
+    gap: 20px;
 }
 
-header nav a {
-    position: relative;
-
-    margin-left: 24px;
-
-    color: var(--cor-escura);
-
+nav a {
+    color: var(--cor-branca);
     text-decoration: none;
-
-    font-size: 14px;
     font-weight: bold;
-
-    transition: color 0.3s ease;
 }
 
-/* Efeito embaixo dos links */
-
-header nav a::after {
-    content: "";
-
-    position: absolute;
-
-    left: 0;
-    bottom: -6px;
-
-    width: 0;
-    height: 2px;
-
-    background-color: var(--cor-destaque);
-
-    transition: width 0.3s ease;
+nav a:hover {
+    text-decoration: underline;
 }
-
-header nav a:hover {
-    color: var(--cor-primaria);
-}
-
-header nav a:hover::after {
-    width: 100%;
-}
-
-/* ================================
-   TÍTULOS
-================================ */
 
 h1,
 h2 {
     font-family: var(--fonte-titulo);
-
+    color: var(--cor-primaria);
     text-align: center;
 }
 
 h2 {
-    color: var(--cor-primaria);
-
-    font-size: 28px;
-
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
-/* ================================
-   HERO
-================================ */
+p {
+    line-height: 1.6;
+}
+
+section,
+article {
+    margin: 16px;
+    padding: 16px;
+}
+
+/* HERO */
 
 .hero {
     position: relative;
-
-    margin-top: 10px;
-
-    overflow: hidden;
-
-    border-radius: 2px;
-
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    margin-top: 20px;
 }
-
-/* IMAGEM PRINCIPAL */
 
 .hero-img {
     display: block;
-
     width: 100%;
     height: auto;
 }
 
-/* ================================
-   TÍTULO DO HERO
-================================ */
-
 .hero h1 {
     position: absolute;
-
     top: 20px;
-    left: 0;
-
     width: 100%;
 
-    padding: 15px;
+    padding: 16px;
 
+    text-align: center;
+
+    background-color: var(--cor-destaque1);
     color: var(--cor-branca);
 
-    background-color: rgba(2, 48, 71, 0.78);
-
-    font-size: 32px;
-
-    letter-spacing: 1px;
-
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    opacity: 0.85;
 }
-
-/* ================================
-   ARTICLE DO HERO
-================================ */
 
 .hero article {
     position: absolute;
@@ -214,209 +114,77 @@ h2 {
     right: 20px;
     bottom: 20px;
 
-    display: flex;
-    align-items: center;
+    padding: 20px;
 
-    padding: 15px 20px;
+    background-color: rgba(7, 89, 133, 0.9);
+    color: var(--cor-branca);
 
-    background-color: rgba(255, 255, 255, 0.94);
-
-    border-radius: 10px;
-
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    overflow: auto;
 }
 
-/* FOTO DO FUNCIONÁRIO */
-
 .hero article img {
+    float: right;
+
     width: 125px;
-    height: 90px;
+    height: 125px;
 
     object-fit: cover;
 
-    float: right;
-
     margin-left: 20px;
-
-    border-radius: 8px;
-
     border: 3px solid var(--cor-branca);
-
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
 }
-
-/* TEXTO */
 
 .hero article p {
-    margin: 0;
-    padding: 0;
-
-    color: var(--cor-escura);
-
-    font-size: 15px;
-
-    line-height: 1.6;
-}
-
-/* ================================
-   HISTÓRIA
-================================ */
-
-.historia {
-    margin-top: 30px;
-    margin-bottom: 20px;
-
-    padding: 30px 35px;
-
-    background-color: var(--cor-branca);
-
-    border-radius: 10px;
-
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
-}
-
-.historia h2 {
-    margin-bottom: 15px;
-}
-
-.historia p {
-    margin: 0;
-    padding: 0;
-
-    text-align: center;
-
-    font-size: 15px;
-
-    line-height: 1.7;
-}
-
-/* ================================
-   AVENTURA
-================================ */
-
-.aventuras {
-    min-height: 180px;
-
-    margin-top: 20px;
-    margin-bottom: 30px;
-
-    padding: 35px 20px;
-
-    background: linear-gradient(135deg,
-            var(--cor-secundaria),
-            var(--cor-branca));
-
-    border-radius: 10px;
-
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
-}
-
-.aventuras h2 {
-    margin: 0;
-
-    color: var(--cor-primaria);
-
-    font-size: 28px;
-}
-
-/* ================================
-   FOOTER
-================================ */
-
-footer {
-    min-height: 90px;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: space-between;
-
-    padding: 15px 20px;
-
-    background-color: var(--cor-escura);
-
-    border-top: 4px solid var(--cor-destaque);
-
     color: var(--cor-branca);
 }
 
-/* COPYRIGHT */
+/* SEÇÕES */
+
+section {
+    background-color: var(--cor-branca);
+    margin: 25px 0;
+    padding: 25px;
+}
+
+.aventuras {
+    min-height: 120px;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+
+    padding: 20px;
+}
 
 footer p {
     margin: 0;
-    padding: 0;
-
-    font-size: 12px;
-
-    color: var(--cor-branca);
 }
-
-/* ================================
-   REDES SOCIAIS
-================================ */
 
 .redes-sociais {
     display: flex;
-
     align-items: center;
-
-    justify-content: flex-end;
-
     gap: 12px;
 
     margin: 0;
     padding: 0;
 }
 
-/* LINKS */
-
 .redes-sociais a {
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    width: 38px;
-    height: 38px;
-
     text-decoration: none;
-
-    background-color: var(--cor-branca);
-
-    border-radius: 6px;
-
-    transition:
-        transform 0.3s ease,
-        background-color 0.3s ease;
+    display: block;
 }
-
-/* ÍCONES */
 
 .redes-sociais img {
     display: block;
-
-    width: 28px;
-    height: 28px;
-
+    width: 35px;
+    height: 35px;
     object-fit: contain;
-}
-
-/* EFEITO AO PASSAR O MOUSE */
-
-.redes-sociais a:hover {
-    transform: translateY(-4px);
-
-    background-color: var(--cor-destaque);
-}
-
-/* ================================
-   PEQUENOS AJUSTES
-================================ */
-
-section {
-    padding: 8px;
-}
-
-article {
-    padding: 8px;
 }
