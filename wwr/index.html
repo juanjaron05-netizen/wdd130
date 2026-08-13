@@ -4,19 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juan Jaron de Oliveira Moreira | WDD 130</title>
 
     <meta name="description"
-      content="Página inicial de Juan Jaron de Oliveira Moreira, estudante do curso WDD 130, dedicada ao aprendizado de desenvolvimento web, HTML e CSS.">
+      content="Descubra aventuras de rafting emocionantes, passeios inesquecíveis e experiências para toda a família.">
+
     <meta name="author" content="Juan Jaron de Oliveira Moreira">
+
+    <title>White Water Rafting | Aventuras Inesquecíveis</title>
+
     <link rel="stylesheet" href="estilos/rafting.css">
 </head>
 
 <body>
 
     <header>
+        <img src="imagens/logo.png" alt="Logo da empresa de rafting">
+
         <nav>
-            <a href="#">Página Inicial</a>
             <a href="index.html">Página Inicial</a>
             <a href="sobre.html">Sobre Nós</a>
             <a href="passeios.html">Passeios</a>
@@ -25,26 +29,145 @@
     </header>
 
     <main>
-        <h1>Juan Jaron de Oliveira Moreira | WDD 130</h1>
-        <img src="imagens/perfil.png.png" alt="Foto de perfil do juan jaron de Oliveira Moreira "
-          width="200">
-        <p>Olá! Meu nome é Juan. Sou professor e estudante de Desenvolvimento de Software. Gosto de
-            aprender programação, melhorar minhas habilidades em inglês e meu objetivo é trabalhar
-            remotamente para empresas internacionais no futuro.</p>
+
+        <section class="home-hero">
+
+            <img src="imagens/hero.png" alt="Pessoas praticando rafting em um rio">
+
+            <div class="hero-content">
+                <h1>Viva a Aventura do Rafting</h1>
+
+                <p>
+                    Descubra a emoção de enfrentar as águas e viva
+                    momentos inesquecíveis em meio à natureza.
+                </p>
+
+                <a class="hero-button" href="passeios.html">
+                    Conheça Nossos Passeios
+                </a>
+            </div>
+
+        </section>
+
+        <section class="home-intro">
+
+            <h2>Uma aventura para todos</h2>
+
+            <p>
+                Nossa empresa oferece experiências de rafting para
+                aventureiros de todos os níveis. Prepare-se para
+                conhecer paisagens incríveis, superar desafios e
+                criar memórias que durarão para sempre.
+            </p>
+
+        </section>
+
+        <section class="home-grid">
+
+            <article class="home-card">
+
+                <img src="imagens/grupo.png" alt="Grupo praticando rafting em águas rápidas">
+
+                <div>
+                    <h2>Adrenalina e Diversão</h2>
+
+                    <p>
+                        Nossos passeios combinam emoção, segurança e
+                        diversão. Enfrente as corredeiras com nossa
+                        equipe de guias experientes.
+                    </p>
+                </div>
+
+            </article>
+
+            <article class="home-card">
+
+                <img src="imagens/rafting2.png" alt="Rafting em meio à natureza">
+
+                <div>
+                    <h2>Natureza Inesquecível</h2>
+
+                    <p>
+                        Explore rios cercados por belas paisagens
+                        naturais e aproveite uma experiência única
+                        longe da rotina.
+                    </p>
+                </div>
+
+            </article>
+
+        </section>
+
+        <section class="newsletter">
+
+            <h2>Receba nossas novidades</h2>
+
+            <p>
+                Cadastre-se para receber informações sobre novos
+                passeios, promoções e aventuras.
+            </p>
+
+            <form>
+
+                <label for="newsletter-name">
+                    Nome:
+                </label>
+
+                <input type="text" id="newsletter-name" name="newsletter-name" required>
+
+                <label for="newsletter-email">
+                    E-mail:
+                </label>
+
+                <input type="email" id="newsletter-email" name="newsletter-email" required>
+
+                <button type="submit">
+                    Quero receber novidades
+                </button>
+
+            </form>
+
+        </section>
+
+        <section class="home-call">
+
+            <h2>Pronto para sua próxima aventura?</h2>
+
+            <p>
+                Escolha seu passeio e venha viver uma experiência
+                inesquecível nas águas.
+            </p>
+
+            <a href="passeios.html">
+                Ver todos os passeios
+            </a>
+
+        </section>
+
     </main>
 
-    <aside class="sidebar">
-        <h2>Curitiba, PR</h2>
-        <img src="imagens/jardim-botanico.jpg" alt="Jardim Botânico" class="place-img">
-        <p>O Jardim Botânico de Curitiba foi inaugurado em 1991 e é um dos principais pontos
-            turísticos
-            da cidade. É famoso por sua estufa de vidro, seus jardins e sua beleza inspirada nos
-            jardins
-            franceses.</p>
-    </aside>
-
     <footer>
-        <p>©️2025 🌴 Juan 🌴 Paraná, Brasil</p>
+
+        <p>
+            &copy; 2026 White Water Rafting - Juan Jaron de Oliveira Moreira
+        </p>
+
+        <nav class="redes-sociais">
+
+            <a href="#" aria-label="Facebook">
+                <img src="imagens/facebook.png" alt="Facebook">
+            </a>
+
+            <a href="#" aria-label="Instagram">
+                <img src="imagens/instagram.png" alt="Instagram">
+            </a>
+
+            <a href="#" aria-label="YouTube">
+                <img src="imagens/youtube.png" alt="YouTube">
+            </a>
+
+        </nav>
+
     </footer>
 
 </body>
