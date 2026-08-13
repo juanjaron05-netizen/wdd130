@@ -216,6 +216,7 @@ footer p {
 .contact-hero h1 {
     font-size: 2.8rem;
     margin-bottom: 15px;
+    color: white;
 }
 
 .contact-hero p {
@@ -398,7 +399,7 @@ footer p {
 .contact-form-section button {
     align-self: center;
 
-    background-color: #d66b2c;
+    background-color: #a94f1f;
     color: white;
 
     border: none;
@@ -413,7 +414,7 @@ footer p {
 }
 
 .contact-form-section button:hover {
-    background-color: #a94f1f;
+    background-color: #8f4219;
 }
 
 /* ================================
