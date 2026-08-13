@@ -56,6 +56,10 @@ nav a:hover {
     text-decoration: underline;
 }
 
+header nav a {
+    color: var(--cor-branca);
+}
+
 h1,
 h2 {
     font-family: var(--fonte-titulo);
@@ -130,10 +134,6 @@ section {
     padding: 25px;
 }
 
-.aventuras {
-    min-height: 120px;
-}
-
 .adventure-gallery {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -169,22 +169,24 @@ footer {
 
 footer p {
     margin: 0;
+    color: var(--cor-branca);
 }
 
-.redes-sociais {
+.socialmedia {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     gap: 12px;
     margin: 0;
     padding: 0;
 }
 
-.redes-sociais a {
+.socialmedia a {
     text-decoration: none;
     display: block;
 }
 
-.redes-sociais img {
+.socialmedia img {
     display: block;
     width: 35px;
     height: 35px;
