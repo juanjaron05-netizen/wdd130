@@ -193,3 +193,257 @@ footer p {
     height: 35px;
     object-fit: contain;
 }
+
+.tours-hero {
+    background-color: #1f4d5c;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+    margin-bottom: 40px;
+}
+
+/* ================================
+   PÁGINA FALE CONOSCO
+================================ */
+
+.contact-hero {
+    background-color: #1f4d5c;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.contact-hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+
+.contact-hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* ================================
+   INFORMAÇÕES DA EMPRESA
+================================ */
+
+.company-info {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.contact-details {
+    background-color: #e8f1f2;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.contact-details h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.contact-details p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.map iframe {
+    width: 100%;
+    min-height: 350px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* ================================
+   EQUIPE
+================================ */
+
+.employees {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.employees > h2 {
+    text-align: center;
+    font-size: 2.3rem;
+    margin-bottom: 35px;
+}
+
+.employee-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.employee-grid figure {
+    margin: 0;
+    text-align: center;
+    background-color: #f1f1f1;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.employee-grid img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+.employee-grid figcaption {
+    padding: 20px 10px 0;
+    line-height: 1.6;
+}
+
+/* ================================
+   FORMULÁRIO
+================================ */
+
+.contact-form-section {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 40px;
+
+    background-color: #e8f1f2;
+    border-radius: 10px;
+}
+
+.contact-form-section h2 {
+    text-align: center;
+    font-size: 2.3rem;
+    margin-bottom: 35px;
+}
+
+.contact-form-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contact-form-section fieldset {
+    border: 1px solid #aaa;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.contact-form-section legend {
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+/* Campos */
+
+.contact-form-section label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contact-form-section input[type="text"],
+.contact-form-section input[type="email"],
+.contact-form-section textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+
+    border: 1px solid #777;
+    border-radius: 5px;
+
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.contact-form-section textarea {
+    resize: vertical;
+}
+
+/* Radio buttons */
+
+.contact-form-section input[type="radio"] {
+    margin-right: 8px;
+}
+
+.contact-form-section fieldset:nth-of-type(2) label {
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+/* Newsletter */
+
+.newsletter {
+    display: flex !important;
+    align-items: center;
+    gap: 10px;
+    font-weight: normal !important;
+}
+
+.newsletter input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+
+/* Botão */
+
+.contact-form-section button {
+    align-self: center;
+
+    background-color: #d66b2c;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    padding: 14px 35px;
+
+    font-size: 1.1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.contact-form-section button:hover {
+    background-color: #a94f1f;
+}
+
+/* ================================
+   RESPONSIVIDADE
+================================ */
+
+@media (max-width: 800px) {
+
+    .company-info {
+        grid-template-columns: 1fr;
+    }
+
+    .employee-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .contact-form-section {
+        margin: 40px 20px;
+        padding: 25px;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1000px) {
+
+    .employee-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}

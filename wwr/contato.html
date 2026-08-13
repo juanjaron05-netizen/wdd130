@@ -1,59 +1,189 @@
-<section class="contact-form">
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-    <h2>Envie sua Mensagem</h2>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <form action="#" method="post">
+    <meta name="description"
+      content="Entre em contato com nossa empresa de rafting para tirar dúvidas, fazer reservas ou enviar sugestões.">
 
-        <label for="name">Nome</label>
+    <meta name="author" content="Juan">
 
-        <input type="text" id="name" name="name" required>
+    <title>Fale Conosco | White Water Rafting</title>
 
-        <label for="email">E-mail</label>
+    <link rel="stylesheet" href="estilos/rafting.css">
+</head>
 
-        <input type="email" id="email" name="email" required>
+<body>
 
-        <p>Finalidade da mensagem</p>
+    <header>
+        <img src="imagens/logo.png" alt="Logo da empresa de rafting">
 
-        <label>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="passeios.html">Passeios</a>
+            <a href="contato.html">Fale Conosco</a>
+        </nav>
+    </header>
 
-            <input type="radio" name="purpose" value="consulta" required>
+    <main>
 
-            Consulta Geral
+        <section class="contact-hero">
+            <h1>Fale Conosco</h1>
+            <p>
+                Estamos prontos para ajudar você a planejar sua próxima
+                aventura de rafting!
+            </p>
+        </section>
 
-        </label>
+        <section class="company-info">
 
-        <label>
+            <div class="contact-details">
+                <h2>Entre em Contato</h2>
 
-            <input type="radio" name="purpose" value="reserva">
+                <p>
+                    <strong>Endereço:</strong><br>
+                    123 Adventure River Road<br>
+                    Curitiba, Paraná, Brasil
+                </p>
 
-            Pergunta sobre Reserva
+                <p>
+                    <strong>Telefone:</strong><br>
+                    (41) 99999-9999
+                </p>
 
-        </label>
+                <p>
+                    <strong>E-mail:</strong><br>
+                    contato@raftingadventure.com
+                </p>
+            </div>
 
-        <label>
+            <div class="map">
+                <iframe src="https://www.google.com/maps?q=Curitiba%2C%20Paran%C3%A1&output=embed"
+                  width="600" height="350" loading="lazy"
+                  title="Mapa mostrando a localização da empresa">
+                </iframe>
+            </div>
 
-            <input type="radio" name="purpose" value="site">
+        </section>
 
-            Sugestão de Site
+        <section class="employees">
 
-        </label>
+            <h2>Nossa Equipe</h2>
 
-        <label for="message">Mensagem</label>
+            <div class="employee-grid">
 
-        <textarea id="message" name="message" rows="6" required></textarea>
+                <figure>
+                    <img src="imagens/carlos.png" alt="Foto de Carlos, instrutor de rafting">
+                    <figcaption>
+                        <strong>Carlos Silva</strong><br>
+                        Instrutor de Rafting
+                    </figcaption>
+                </figure>
 
-        <label class="newsletter">
+                <figure>
+                    <img src="imagens/ana.png" alt="Foto de Ana, gerente da empresa">
+                    <figcaption>
+                        <strong>Ana Souza</strong><br>
+                        Gerente de Operações
+                    </figcaption>
+                </figure>
 
-            <input type="checkbox" name="newsletter">
+                <figure>
+                    <img src="imagens/lucas.png" alt="Foto de Lucas, guia de rafting">
+                    <figcaption>
+                        <strong>Lucas Oliveira</strong><br>
+                        Guia de Aventuras
+                    </figcaption>
+                </figure>
 
-            Quero receber a newsletter mensal
+            </div>
 
-        </label>
+        </section>
 
-        <button type="submit">
-            Enviar Mensagem
-        </button>
+        <section class="contact-form-section">
 
-    </form>
+            <h2>Envie uma Mensagem</h2>
 
-</section>
+            <form>
+
+                <fieldset>
+
+                    <legend>Informações pessoais</legend>
+
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Finalidade da mensagem</legend>
+
+                    <label>
+                        <input type="radio" name="purpose" value="general" required>
+                        Consulta Geral
+                    </label>
+
+                    <label>
+                        <input type="radio" name="purpose" value="reservation">
+                        Pergunta sobre Reserva
+                    </label>
+
+                    <label>
+                        <input type="radio" name="purpose" value="suggestion">
+                        Sugestão de Site
+                    </label>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Mensagem</legend>
+
+                    <label for="message">Digite sua mensagem:</label>
+
+                    <textarea id="message" name="message" rows="7" required>
+                    </textarea>
+
+                </fieldset>
+
+                <label class="newsletter">
+                    <input type="checkbox" name="newsletter" value="yes">
+
+                    Quero receber a newsletter mensal
+                </label>
+
+                <button type="submit">
+                    Enviar Mensagem
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            &copy; 2026 White Water Rafting - Juan
+        </p>
+
+        <div class="social-links">
+            <a href="#" aria-label="Facebook">Facebook</a>
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="YouTube">YouTube</a>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
