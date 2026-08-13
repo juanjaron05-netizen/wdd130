@@ -333,7 +333,7 @@ footer p {
 }
 
 .contact-form-section fieldset {
-    border: 1px solid #aaa;
+    border: 1px solid #777;
     padding: 25px;
     border-radius: 8px;
 }
@@ -343,7 +343,9 @@ footer p {
     padding: 0 10px;
 }
 
-/* Campos */
+/* ================================
+   CAMPOS
+================================ */
 
 .contact-form-section label {
     display: block;
@@ -369,7 +371,9 @@ footer p {
     resize: vertical;
 }
 
-/* Radio buttons */
+/* ================================
+   RADIO BUTTONS
+================================ */
 
 .contact-form-section input[type="radio"] {
     margin-right: 8px;
@@ -380,13 +384,15 @@ footer p {
     margin-bottom: 15px;
 }
 
-/* Newsletter */
+/* ================================
+   NEWSLETTER
+================================ */
 
 .newsletter {
-    display: flex !important;
+    display: flex;
     align-items: center;
     gap: 10px;
-    font-weight: normal !important;
+    font-weight: normal;
 }
 
 .newsletter input[type="checkbox"] {
@@ -394,7 +400,9 @@ footer p {
     height: 18px;
 }
 
-/* Botão */
+/* ================================
+   BOTÃO
+================================ */
 
 .contact-form-section button {
     align-self: center;
@@ -415,6 +423,20 @@ footer p {
 
 .contact-form-section button:hover {
     background-color: #8f4219;
+}
+
+/* ================================
+   HEADER
+   CORREÇÃO DE CONTRASTE
+================================ */
+
+header {
+    background-color: #075985;
+    color: white;
+}
+
+header nav a {
+    color: white;
 }
 
 /* ================================
